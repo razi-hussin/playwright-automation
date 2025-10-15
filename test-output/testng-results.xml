@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-10-15T12:46:31 MYT" name="Cucumber Suite" finished-at="2025-10-15T12:46:48 MYT" duration-ms="16691">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@3c0be339]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-10-15T12:46:31 MYT" name="Cucumber Tests" finished-at="2025-10-15T12:46:48 MYT" duration-ms="16691">
+      <class name="runner.RunCucumberTest">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.RunCucumberTest@3c0be339]" started-at="2025-10-15T12:46:31 MYT" name="setUpClass" finished-at="2025-10-15T12:46:31 MYT" duration-ms="295" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@75f95314]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@3c0be339]" started-at="2025-10-15T12:46:31 MYT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-15T12:46:48 MYT" duration-ms="16339" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["The one where Sally searches for products by name"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Product Catalog"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@3c0be339]" started-at="2025-10-15T12:46:31 MYT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-15T12:46:48 MYT" duration-ms="16340" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["The one where Sally searches for and Adjustable Wrench"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Product Catalog"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.RunCucumberTest@3c0be339]" started-at="2025-10-15T12:46:48 MYT" name="tearDownClass" finished-at="2025-10-15T12:46:48 MYT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.RunCucumberTest -->
+    </test> <!-- Cucumber Tests -->
+  </suite> <!-- Cucumber Suite -->
+</testng-results>
