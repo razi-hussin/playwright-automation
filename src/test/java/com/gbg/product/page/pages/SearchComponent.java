@@ -1,4 +1,4 @@
-package pageObjects.pages;
+package com.gbg.product.page.pages;
 
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;

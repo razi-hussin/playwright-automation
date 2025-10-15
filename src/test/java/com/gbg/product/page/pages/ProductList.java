@@ -1,7 +1,7 @@
-package pageObjects.pages;
+package com.gbg.product.page.pages;
 
 import com.microsoft.playwright.Page;
-import pageObjects.domain.ProductSummary;
+import com.gbg.product.page.domain.ProductSummary;
 
 import java.util.List;
 
