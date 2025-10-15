@@ -21,6 +21,8 @@ public class RunCucumberTest extends AbstractTestNGCucumberTests {
         public static void main (String[]args){
             XmlSuite suite = new XmlSuite();
             suite.setName("Cucumber Suite");
+
+            suite.setParallel(XmlSuite.ParallelMode.NONE);
             suite.setDataProviderThreadCount(ConfigLoader.getInt("thread.count", 1));
 
             XmlTest test = new XmlTest(suite);
