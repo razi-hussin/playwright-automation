@@ -48,7 +48,7 @@ on:
           run: actions/cache@v3
           with:
             path: ~/.m2
-            key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml) }}
+            key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
             restore-key: |
               ${{ runner.os }}-maven
 
