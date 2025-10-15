@@ -1,4 +1,4 @@
-package com.gbg.product.page.pages;
+package com.gbg.pages.product.pages.pages;
 
 public record CartLineItem(
         String title,

@@ -1,4 +1,4 @@
-package com.gbg.product.page.domain;
+package com.gbg.pages.product.pages.domain;
 
 public record ProductSummary(String name, String price) {
 }

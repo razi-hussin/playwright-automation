@@ -2,7 +2,7 @@ package step_definitions.product.steps;
 
 import com.microsoft.playwright.Page;
 import io.qameta.allure.Step;
-import com.gbg.product.page.domain.ProductSummary;
+import com.gbg.pages.product.pages.domain.ProductSummary;
 import fixtures.PlaywrightCucumberFixtures;
 import io.cucumber.java.Before;
 import io.cucumber.java.DataTableType;
@@ -11,9 +11,9 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.assertj.core.api.Assertions;
-import com.gbg.product.page.pages.NavBar;
-import com.gbg.product.page.pages.ProductList;
-import com.gbg.product.page.pages.SearchComponent;
+import com.gbg.pages.product.pages.pages.NavBar;
+import com.gbg.pages.product.pages.pages.ProductList;
+import com.gbg.pages.product.pages.pages.SearchComponent;
 
 import java.util.List;
 import java.util.Map;
