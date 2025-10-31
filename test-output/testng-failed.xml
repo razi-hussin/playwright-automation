@@ -3,13 +3,13 @@
 <suite data-provider-thread-count="5" name="Failed suite [Cucumber Suite]">
   <test thread-count="5" name="Cucumber Tests(failed)">
     <classes>
-      <class name="runner.RunCucumberTest">
+      <class name="com.gbg.runners.RunCucumberTest">
         <methods>
           <include name="setUpClass"/>
           <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="1"/>
+          <include name="runScenario" invocation-numbers="0"/>
         </methods>
-      </class> <!-- runner.RunCucumberTest -->
+      </class> <!-- com.gbg.runners.RunCucumberTest -->
     </classes>
   </test> <!-- Cucumber Tests(failed) -->
 </suite> <!-- Failed suite [Cucumber Suite] -->

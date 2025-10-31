@@ -2,7 +2,7 @@
 <suite name="Cucumber Suite" data-provider-thread-count="5" parallel="none">
     <test name="Cucumber Tests">
         <classes>
-            <class name="runner.RunCucumberTest"/>
+            <class name="com.gbg.runners.RunCucumberTest"/>
         </classes>
     </test>
 </suite>

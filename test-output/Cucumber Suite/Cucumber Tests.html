@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Cucumber Tests</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Oct 15 16:14:21 MYT 2025</td>
+<td>Started on:</td><td>Wed Oct 15 17:12:49 MYT 2025</td>
 </tr>
-<tr><td>Total time:</td><td>16 seconds (16879 ms)</td>
+<tr><td>Total time:</td><td>46 seconds (46917 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,15 +76,81 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runner.RunCucumberTest.runScenario()'><b>runScenario</b><br>Test class: runner.RunCucumberTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The one where Sally searches for products by name", "Product Catalog"</td>
-<td></td>
-<td>16</td>
-<td>runner.RunCucumberTest@3c0be339</td></tr>
-<tr>
-<td title='runner.RunCucumberTest.runScenario()'><b>runScenario</b><br>Test class: runner.RunCucumberTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The one where Sally searches for and Adjustable Wrench", "Product Catalog"</td>
-<td></td>
-<td>16</td>
-<td>runner.RunCucumberTest@3c0be339</td></tr>
+<td title='com.gbg.runners.RunCucumberTest.runScenario()'><b>runScenario</b><br>Test class: com.gbg.runners.RunCucumberTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "first test", "Instinct"</td>
+<td><div><pre>com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\MUHAMM~1.HUS\AppData\Local\Temp\playwright-java-1798706512889426626\package\lib\server\progress.js:68:28)
+    at FrameDispatcher._runCommand (C:\Users\MUHAMM~1.HUS\AppData\Local\Temp\playwright-java-1798706512889426626\package\lib\server\dispatchers\dispatcher.js:95:31)
+    at DispatcherConnection.dispatch (C:\Users\MUHAMM~1.HUS\AppData\Local\Temp\playwright-java-1798706512889426626\package\lib\server\dispatchers\dispatcher.js:329:39)
+}
+Call log:
+-   - waiting for getByPlaceholder(&quot;User Id&quot;)
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.FrameImpl.fill(FrameImpl.java:300)
+	at com.microsoft.playwright.impl.LocatorImpl.fill(LocatorImpl.java:244)
+	at com.microsoft.playwright.Locator.fill(Locator.java:3105)
+	at step_definitions.instinct.step.InstinctStepdefs.navigateToInstinctPortal(InstinctStepdefs.java:33)
+	at ✽.navigate to Instinct portal(file:///C:/Users/muhammad.hussin/github2/automation-instinct-predator/src/Test/resources/features/instinct.features/Instinct.feature:5)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\MUHAMM~1.HUS\AppData\Local\Temp\playwright-java-1798706512889426626\package\lib\server\progress.js:68:28)
+    at FrameDispatcher._runCommand (C:\Users\MUHAMM~1.HUS\AppData\Local\Temp\playwright-java-1798706512889426626\package\lib\server\dispatchers\dispatcher.js:95:31)
+    at DispatcherConnection.dispatch (C:\Users\MUHAMM~1.HUS\AppData\Local\Temp\playwright-java-1798706512889426626\package\lib\server\dispatchers\dispatcher.js:329:39)
+}
+Call log:
+-   - waiting for getByPlaceholder(&quot;User Id&quot;)
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	... 7 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace770512189", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace770512189'><pre>com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\MUHAMM~1.HUS\AppData\Local\Temp\playwright-java-1798706512889426626\package\lib\server\progress.js:68:28)
+    at FrameDispatcher._runCommand (C:\Users\MUHAMM~1.HUS\AppData\Local\Temp\playwright-java-1798706512889426626\package\lib\server\dispatchers\dispatcher.js:95:31)
+    at DispatcherConnection.dispatch (C:\Users\MUHAMM~1.HUS\AppData\Local\Temp\playwright-java-1798706512889426626\package\lib\server\dispatchers\dispatcher.js:329:39)
+}
+Call log:
+-   - waiting for getByPlaceholder(&quot;User Id&quot;)
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.FrameImpl.fill(FrameImpl.java:300)
+	at com.microsoft.playwright.impl.LocatorImpl.fill(LocatorImpl.java:244)
+	at com.microsoft.playwright.Locator.fill(Locator.java:3105)
+	at step_definitions.instinct.step.InstinctStepdefs.navigateToInstinctPortal(InstinctStepdefs.java:33)
+	at ✽.navigate to Instinct portal(file:///C:/Users/muhammad.hussin/github2/automation-instinct-predator/src/Test/resources/features/instinct.features/Instinct.feature:5)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\MUHAMM~1.HUS\AppData\Local\Temp\playwright-java-1798706512889426626\package\lib\server\progress.js:68:28)
+    at FrameDispatcher._runCommand (C:\Users\MUHAMM~1.HUS\AppData\Local\Temp\playwright-java-1798706512889426626\package\lib\server\dispatchers\dispatcher.js:95:31)
+    at DispatcherConnection.dispatch (C:\Users\MUHAMM~1.HUS\AppData\Local\Temp\playwright-java-1798706512889426626\package\lib\server\dispatchers\dispatcher.js:329:39)
+}
+Call log:
+-   - waiting for getByPlaceholder(&quot;User Id&quot;)
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	... 7 more
+</pre></div></td>
+<td>46</td>
+<td>com.gbg.runners.RunCucumberTest@55f616cf</td></tr>
 </table><p>
 </body>
 </html>
